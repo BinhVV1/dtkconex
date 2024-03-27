@@ -1202,13 +1202,13 @@ function groffer_shop_categories_with_xsthumbnails_shortcode( $params, $content 
     if ($button_text) {
         $button_text_value = $button_text;
     }else{
-        $button_text_value = __('View All Items', 'modeltheme');
+        $button_text_value = __('Xem Thêm', 'modeltheme');
     }
 
     if ($products_label_text) {
         $products_label_text_value = $products_label_text;
     }else{
-        $products_label_text_value = __('Products', 'modeltheme');
+        $products_label_text_value = __('Sản Phẩm', 'modeltheme');
     }
 
 
@@ -1240,7 +1240,7 @@ function groffer_shop_categories_with_xsthumbnails_shortcode( $params, $content 
                 $shortcode_content .= '<div class="category item col-md-3 '.$banner_pos.'" >';
                     $shortcode_content .= '<div style="'.$category_style_bg.'" class="category-wrapper">';
                         $shortcode_content .= '<a class="#categoryid_'.$cat->term_id.'">';
-                            $shortcode_content .= '<span class="cat-name">'.$category.'</span>';                    
+                            $shortcode_content .= '<span class="cat-name">'.$cat->name.'</span>';                    
                         $shortcode_content .= '</a>';
                         $shortcode_content .= '<br>'; 
 

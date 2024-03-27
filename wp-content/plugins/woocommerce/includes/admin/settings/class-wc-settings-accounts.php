@@ -51,7 +51,7 @@ class WC_Settings_Accounts extends WC_Settings_Page {
 			),
 			array(
 				'title'         => __( 'Guest checkout', 'woocommerce' ),
-				'desc'          => __( 'Allow customers to place orders without an account', 'woocommerce' ),
+				'desc'          => __( 'Cho phép khách hàng đặt hàng không cần tài khoản', 'woocommerce' ),
 				'id'            => 'woocommerce_enable_guest_checkout',
 				'default'       => 'yes',
 				'type'          => 'checkbox',
@@ -148,7 +148,7 @@ class WC_Settings_Accounts extends WC_Settings_Page {
 				'desc_tip' => __( 'Optionally add some text about your store privacy policy to show on account registration forms.', 'woocommerce' ),
 				'id'       => 'woocommerce_registration_privacy_policy_text',
 				/* translators: %s privacy policy page name and link */
-				'default'  => sprintf( __( 'Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our %s.', 'woocommerce' ), '[privacy_policy]' ),
+				'default'  => sprintf( __( 'Dữ liệu cá nhân của bạn sẽ được sử dụng để hỗ trợ trải nghiệm của bạn trên toàn bộ trang web này, để quản lý quyền truy cập vào tài khoản của bạn và cho các mục đích khác được mô tả trong phần của chúng tôi %s.', 'woocommerce' ), '[privacy_policy]' ),
 				'type'     => 'textarea',
 				'css'      => 'min-width: 50%; height: 75px;',
 			),
@@ -158,7 +158,7 @@ class WC_Settings_Accounts extends WC_Settings_Page {
 				'desc_tip' => __( 'Optionally add some text about your store privacy policy to show during checkout.', 'woocommerce' ),
 				'id'       => 'woocommerce_checkout_privacy_policy_text',
 				/* translators: %s privacy policy page name and link */
-				'default'  => sprintf( __( 'Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our %s.', 'woocommerce' ), '[privacy_policy]' ),
+				'default'  => sprintf( __( 'Dữ liệu cá nhân của bạn sẽ được sử dụng để xử lý đơn đặt hàng, hỗ trợ trải nghiệm của bạn trên trang web này và cho các mục đích khác được mô tả trong phần của chúng tôi %s.', 'woocommerce' ), '[privacy_policy]' ),
 				'type'     => 'textarea',
 				'css'      => 'min-width: 50%; height: 75px;',
 			),
@@ -204,7 +204,7 @@ class WC_Settings_Accounts extends WC_Settings_Page {
 			),
 			array(
 				'title'       => __( 'Retain cancelled orders', 'woocommerce' ),
-				'desc_tip'    => __( 'Cancelled orders are unpaid and may have been cancelled by the store owner or customer. They will be trashed after the specified duration.', 'woocommerce' ),
+				'desc_tip'    => __( 'Các đơn hàng bị hủy là chưa được thanh toán và có thể đã bị chủ cửa hàng hoặc khách hàng hủy. Chúng sẽ bị chuyển vào thùng rác sau khoảng thời gian được chỉ định.', 'woocommerce' ),
 				'id'          => 'woocommerce_trash_cancelled_orders',
 				'type'        => 'relative_date_selector',
 				'placeholder' => __( 'N/A', 'woocommerce' ),
@@ -213,7 +213,7 @@ class WC_Settings_Accounts extends WC_Settings_Page {
 			),
 			array(
 				'title'       => __( 'Retain completed orders', 'woocommerce' ),
-				'desc_tip'    => __( 'Retain completed orders for a specified duration before anonymizing the personal data within them.', 'woocommerce' ),
+				'desc_tip'    => __( 'Giữ lại các đơn đặt hàng đã hoàn thành trong một khoảng thời gian nhất định trước khi ẩn danh dữ liệu cá nhân trong đó.', 'woocommerce' ),
 				'id'          => 'woocommerce_anonymize_completed_orders',
 				'type'        => 'relative_date_selector',
 				'placeholder' => __( 'N/A', 'woocommerce' ),

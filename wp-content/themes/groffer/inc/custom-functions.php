@@ -278,14 +278,14 @@ if (!function_exists('groffer_footer_mobile_icons_group')) {
                     if (groffer_redux('groffer_header_mobile_switcher_footer_search') == true) {
                         echo '<div class="col-md-3 search">
                                     <a href="#" class="mt-search-icon">
-                                        <i class="fa fa-search" aria-hidden="true"></i>'.esc_html__('Search','groffer').'
+                                        <i class="fa fa-search" aria-hidden="true"></i>'.esc_html__('Tìm Kiếm','groffer').'
                                     </a>
                                 </div>';
                     }
                     if (groffer_redux('groffer_header_mobile_switcher_footer_cart') == true) {
                         echo '<div class="col-md-3 cart">
                                     <a  href="' .esc_url($cart_url). '">
-                                        <i class="fa fa-shopping-basket" aria-hidden="true"></i>'.esc_html__('Cart','groffer').'
+                                        <i class="fa fa-shopping-basket" aria-hidden="true"></i>'.esc_html__('Giỏ Hàng','groffer').'
                                     </a>
                                 </div>';
                     }
@@ -325,11 +325,11 @@ if (!function_exists('groffer_my_account_header')) {
                         
                 <li id="nav-menu-register" class="nav-menu-account">
                     <img src="'.esc_url( get_template_directory_uri().'/images/svg/header-account.svg' ).'" alt="'.esc_attr__('Header Account','groffer').'" />       
-                    <span class="top-register">'.esc_html__('Hello,','groffer').'</span><br>
-                    <span>'.esc_html__('My Account','groffer').'</span>
+                    <span class="top-register">'.esc_html__('Xin Chào,','groffer').'</span><br>
+                    <span>'.esc_html__('Tài Khoản','groffer').'</span>
                 </li>
                 <ul>
-                    <li><a href="'.esc_url(get_permalink( get_option('woocommerce_myaccount_page_id') )).'"><i class="icon-layers icons"></i>'.esc_html__('My Dashboard','groffer').'</a></li>'; 
+                    <li><a href="'.esc_url(get_permalink( get_option('woocommerce_myaccount_page_id') )).'"><i class="icon-layers icons"></i>'.esc_html__('Quản Lý','groffer').'</a></li>'; 
                     if (class_exists('Dokan_Vendor') && dokan_is_user_seller( dokan_get_current_user_id() )) {           
                         echo '<li><a href="'.esc_url( home_url().'/dashboard' ).'"><i class="icon-trophy icons"></i>'.esc_html__('Vendor Dashboard','groffer').'</a></li>';
                     }      
@@ -348,17 +348,16 @@ if (!function_exists('groffer_my_account_header')) {
                             echo '<li><a href="'.esc_url( get_permalink(get_option('wcvendors_vendor_dashboard_page_id')) ).'"><i class="icon-trophy icons"></i>'.esc_html__('Vendor Dashboard','groffer').'</a></li>';
                         }
                     }    
-                    echo '<li><a href="'.esc_url(get_permalink(get_option('woocommerce_myaccount_page_id')).'orders').'"><i class="icon-bag icons"></i>'.esc_html__('My Orders','groffer').'</a></li>
-                          <li><a href="'.esc_url(get_permalink(get_option('woocommerce_myaccount_page_id')).'edit-account').'"><i class="icon-user icons"></i>'.esc_html__('Account Details','groffer').'</a></li>
+                    echo '<li><a href="'.esc_url(get_permalink(get_option('woocommerce_myaccount_page_id')).'orders').'"><i class="icon-bag icons"></i>'.esc_html__('Đơn Hàng','groffer').'</a></li>
+                          <li><a href="'.esc_url(get_permalink(get_option('woocommerce_myaccount_page_id')).'edit-account').'"><i class="icon-user icons"></i>'.esc_html__('Thông Tin','groffer').'</a></li>
                           <div class="dropdown-divider"></div>
-                          <li><a href="'.esc_url(wp_logout_url( home_url() )).'"><i class="icon-logout icons"></i>'.esc_html__('Log Out','groffer').'</a></li>
+                          <li><a href="'.esc_url(wp_logout_url( home_url() )).'"><i class="icon-logout icons"></i>'.esc_html__('Đăng Xuất','groffer').'</a></li>
                         </ul>
                       </div>';
     } else {
-        echo '<li id="nav-menu-login" class="groffer-logoin">
+        echo '<li id="nav-menu-login" class="groffer-logoin" style="display: flex;align-items: center;">
                 <img src="'.esc_url( get_template_directory_uri().'/images/svg/header-account.svg' ).'" alt="'.esc_attr__('Header Account','groffer').'" />
-                <span class="top-register">'.esc_html__('Hello, Sign in','groffer').'</span>
-                <a href="'.esc_url('#').'" class="lrm-login lrm-hide-if-logged-in">'.esc_html__('Account & Lists','groffer').'';
+                <a href="'.esc_url('#').'" class="lrm-login lrm-hide-if-logged-in">Đăng Ký hoặc<br>Đăng Nhập';
                     do_shortcode('[nextend_social_login provider="google"]');
          echo '</a>
            </li>';
@@ -373,12 +372,12 @@ if (!function_exists('groffer_my_cart_header')) {
 	  if ( class_exists( 'WooCommerce' ) ) {
 	    $cart_url = wc_get_cart_url();
 	  }
- 	  echo '<img src="'.esc_url( get_template_directory_uri().'/images/svg/header-cart.svg' ).'" alt="'.esc_attr__('Header Cart','groffer').'" />
-            <span class="cart-number">'.sprintf ( _n( '%d', '%d', WC()->cart->get_cart_contents_count(), 'groffer' ), WC()->cart->get_cart_contents_count() ).'</span>
-            <a  class="shop_cart" href="'.esc_url($cart_url).'">'.esc_html__('My Cart', 'groffer').'</a>
-
-            <a class="cart-contents" href="'.esc_url(wc_get_cart_url()).'" title="'.esc_attr__( 'View your shopping cart', 'groffer').'">'.WC()->cart->get_cart_total().'</a>
-                
+ 	  echo '
+            <a style="display:flex; align-items:center " class="shop_cart" style="" href="'.esc_url($cart_url).'">
+                <img src="'.esc_url( get_template_directory_uri().'/images/svg/header-cart.svg' ).'" alt="'.esc_attr__('Header Cart','groffer').'" />
+                <span class="cart-number">'.sprintf ( _n( '%d', '%d', WC()->cart->get_cart_contents_count(), 'groffer' ), WC()->cart->get_cart_contents_count() ).'</span>
+                <p style="margin:0;">Giỏ Hàng</p>
+            </a>
             <div class="header_mini_cart">';
             	the_widget( 'WC_Widget_Cart' );
             echo '</div>';

@@ -2292,6 +2292,18 @@ header.header-v1 .menu-list .inquiry.btn:hover {
 .navbar-collapse.collapse.col-md-8 {
     width: 66%;
 }
+
+.woocommerce-ordering, .footer-top,.compare, .woocommerce-privacy-policy-text {
+    display: none !important;
+}
+.masonry_holder .category_name{
+    color:white !important;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.4); 
+    padding: 5px !important;
+    margin-bottom: 30px !important;
+    width: fit-content;
+}
 .first_header .navbar-collapse.collapse.col-md-8 {
     padding:0;
 }
@@ -5721,7 +5733,7 @@ table.woocommerce-grouped-product-list.group_table {
     padding: 0px;
 }
 .woocommerce_simple_styled .woocommerce ul.products li.product .price::after {
-    content: "per Kilogram";
+    content: "";
     display: block;
     color: #666 !important;
     line-height: 12px;

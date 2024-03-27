@@ -638,42 +638,42 @@ class LRM_Settings {
             ->add_field( array(
                 'slug'        => 'heading',
                 'name'        => __('Form heading', 'ajax-login-and-registration-modal-popup' ),
-                'default'        => __('Sign in', 'ajax-login-and-registration-modal-popup' ),
+                'default'        => __('Đăng nhập', 'ajax-login-and-registration-modal-popup' ),
                 'render'      => array( new LRM_Field_Text(), 'input' ),
                 'sanitize'    => array( new LRM_Field_Text(), 'sanitize' ),
             ) )
             ->add_field( array(
                 'slug'        => 'username',
                 'name'        => __('Form: Email or Username', 'ajax-login-and-registration-modal-popup' ),
-                'default'        => __('Email or Username', 'ajax-login-and-registration-modal-popup' ),
+                'default'        => __('Thư điện tử hoặc tên người dùng', 'ajax-login-and-registration-modal-popup' ),
                 'render'      => array( new LRM_Field_Text(), 'input' ),
                 'sanitize'    => array( new LRM_Field_Text(), 'sanitize' ),
             ) )
             ->add_field( array(
                 'slug'        => 'password',
                 'name'        => __('Form: Password', 'ajax-login-and-registration-modal-popup' ),
-                'default'        => __('Password', 'ajax-login-and-registration-modal-popup' ),
+                'default'        => __('Mật Khẩu', 'ajax-login-and-registration-modal-popup' ),
                 'render'      => array( new LRM_Field_Text(), 'input' ),
                 'sanitize'    => array( new LRM_Field_Text(), 'sanitize' ),
             ) )
             ->add_field( array(
                 'slug'        => 'remember-me',
                 'name'        => __('Form: Remember me', 'ajax-login-and-registration-modal-popup' ),
-                'default'     => __('Remember me', 'ajax-login-and-registration-modal-popup' ),
+                'default'     => __('Nhớ Mật Khẩu', 'ajax-login-and-registration-modal-popup' ),
                 'render'      => array( new LRM_Field_Text(), 'input' ),
                 'sanitize'    => array( new LRM_Field_Text(), 'sanitize' ),
             ) )
             ->add_field( array(
                 'slug'        => 'button',
                 'name'        => __('Form button: Login', 'ajax-login-and-registration-modal-popup' ),
-                'default'        => __('Log in', 'ajax-login-and-registration-modal-popup' ),
+                'default'        => __('Đăng Nhập', 'ajax-login-and-registration-modal-popup' ),
                 'render'      => array( new LRM_Field_Text(), 'input' ),
                 'sanitize'    => array( new LRM_Field_Text(), 'sanitize' ),
             ) )
             ->add_field( array(
                 'slug'        => 'forgot-password',
                 'name'        => __('Link: Forgot your password?', 'ajax-login-and-registration-modal-popup' ),
-                'default'     => __('Forgot your password?', 'ajax-login-and-registration-modal-popup' ),
+                'default'     => __('Quên Mật Khẩu?', 'ajax-login-and-registration-modal-popup' ),
                 'render'      => array( new LRM_Field_Text(), 'input' ),
                 'sanitize'    => array( new LRM_Field_Text(), 'sanitize' ),
             ) )
@@ -681,28 +681,28 @@ class LRM_Settings {
             ->add_field( array(
                 'slug'        => 'no_login',
                 'name'        => __('Message: No Username/Email', 'ajax-login-and-registration-modal-popup' ),
-                'default'     => __('Please enter your Username/email!', 'ajax-login-and-registration-modal-popup' ),
+                'default'     => __('Vui lòng nhập Tên đăng nhập/email của bạn!', 'ajax-login-and-registration-modal-popup' ),
                 'render'      => array( new LRM_Field_Text(), 'input' ),
                 'sanitize'    => array( new LRM_Field_Text(), 'sanitize' ),
             ) )
             ->add_field( array(
                 'slug'        => 'invalid_login',
                 'name'        => __('Message: Invalid login (NOT IN USE ANYMORE!)', 'ajax-login-and-registration-modal-popup' ),
-                'default'        => __('Unknown username. Check again or try your email address.', 'ajax-login-and-registration-modal-popup' ),
+                'default'        => __('Tên người dùng chưa đúng. Hãy kiểm tra lại hoặc thử địa chỉ email của bạn.', 'ajax-login-and-registration-modal-popup' ),
                 'render'      => array( new LRM_Field_Text(), 'input' ),
                 'sanitize'    => array( new LRM_Field_Text(), 'sanitize' ),
             ) )
             ->add_field( array(
                 'slug'        => 'invalid_username',
                 'name'        => __('Message: Invalid username', 'ajax-login-and-registration-modal-popup' ),
-                'default'        => __('Unknown username. Check again or try your email address.', 'ajax-login-and-registration-modal-popup' ),
+                'default'        => __('Tên người dùng chưa đúng. Hãy kiểm tra lại hoặc thử địa chỉ email của bạn.', 'ajax-login-and-registration-modal-popup' ),
                 'render'      => array( new LRM_Field_Text(), 'input' ),
                 'sanitize'    => array( new LRM_Field_Text(), 'sanitize' ),
             ) )
             ->add_field( array(
                 'slug'        => 'invalid_email',
                 'name'        => __('Message: Invalid email address', 'ajax-login-and-registration-modal-popup' ),
-                'default'        => __('Unknown email address. Check again or try your username', 'ajax-login-and-registration-modal-popup' ),
+                'default'        => __('Địa chỉ email không xác định. Kiểm tra lại hoặc thử tên người dùng của bạn', 'ajax-login-and-registration-modal-popup' ),
                 'render'      => array( new LRM_Field_Text(), 'input' ),
                 'sanitize'    => array( new LRM_Field_Text(), 'sanitize' ),
             ) )
@@ -719,21 +719,21 @@ class LRM_Settings {
             ->add_field( array(
                 'slug'        => 'no_pass',
                 'name'        => __('Message: No Password', 'ajax-login-and-registration-modal-popup' ),
-                'default'        => __('Please enter your password!', 'ajax-login-and-registration-modal-popup' ),
+                'default'        => __('Vui lòng nhập mật khẩu của bạn!', 'ajax-login-and-registration-modal-popup' ),
                 'render'      => array( new LRM_Field_Text(), 'input' ),
                 'sanitize'    => array( new LRM_Field_Text(), 'sanitize' ),
             ) )
             ->add_field( array(
                 'slug'        => 'success',
                 'name'        => __('Message: Login successful (with "Reload page after login/registration?" enabled)', 'ajax-login-and-registration-modal-popup' ),
-                'default'     => __('Login successful, reloading page...', 'ajax-login-and-registration-modal-popup' ),
+                'default'     => __('Đăng nhập thành công, đang tải lại trang...', 'ajax-login-and-registration-modal-popup' ),
                 'render'      => array( new LRM_Field_Text(), 'input' ),
                 'sanitize'    => array( new LRM_Field_Text(), 'sanitize' ),
             ) )
             ->add_field( array(
                 'slug'        => 'success_no_reload',
                 'name'        => __('Message: Login successful (with "Reload page after login/registration?" disabled)', 'ajax-login-and-registration-modal-popup' ),
-                'default'     => __('Login successful, you can close this window.', 'ajax-login-and-registration-modal-popup' ),
+                'default'     => __('Đăng nhập thành công, bạn có thể đóng cửa sổ này', 'ajax-login-and-registration-modal-popup' ),
                 'render'      => array( new LRM_Field_Text(), 'input' ),
                 'sanitize'    => array( new LRM_Field_Text(), 'sanitize' ),
             ) )
@@ -744,28 +744,28 @@ class LRM_Settings {
             ->add_field( array(
                 'slug'        => 'heading',
                 'name'        => __('Form heading', 'ajax-login-and-registration-modal-popup' ),
-                'default'        => __('New account', 'ajax-login-and-registration-modal-popup' ),
+                'default'        => __('Tài khoản mới', 'ajax-login-and-registration-modal-popup' ),
                 'render'      => array( new LRM_Field_Text(), 'input' ),
                 'sanitize'    => array( new LRM_Field_Text(), 'sanitize' ),
             ) )
             ->add_field( array(
                 'slug'        => 'username',
                 'name'        => __('Form: Username', 'ajax-login-and-registration-modal-popup' ),
-                'default'     => __('Username*', 'ajax-login-and-registration-modal-popup' ),
+                'default'     => __('Tên tài khoản*', 'ajax-login-and-registration-modal-popup' ),
                 'render'      => array( new LRM_Field_Text(), 'input' ),
                 'sanitize'    => array( new LRM_Field_Text(), 'sanitize' ),
             ) )
             ->add_field( array(
                 'slug'        => 'first-name',
                 'name'        => __('Form: First name', 'ajax-login-and-registration-modal-popup' ),
-                'default'     => __('First name*', 'ajax-login-and-registration-modal-popup' ),
+                'default'     => __('Họ*', 'ajax-login-and-registration-modal-popup' ),
                 'render'      => array( new LRM_Field_Text(), 'input' ),
                 'sanitize'    => array( new LRM_Field_Text(), 'sanitize' ),
             ) )
             ->add_field( array(
                 'slug'        => 'last-name',
                 'name'        => __('Form: Last name', 'ajax-login-and-registration-modal-popup' ),
-                'default'     => __('Last name', 'ajax-login-and-registration-modal-popup' ),
+                'default'     => __('Tên', 'ajax-login-and-registration-modal-popup' ),
                 'render'      => array( new LRM_Field_Text(), 'input' ),
                 'sanitize'    => array( new LRM_Field_Text(), 'sanitize' ),
             ) )
@@ -779,14 +779,14 @@ class LRM_Settings {
             ->add_field( array(
                 'slug'        => 'user_role',
                 'name'        => __('Form: User Role', 'ajax-login-and-registration-modal-popup' ),
-                'default'     => __('Select a Role', 'ajax-login-and-registration-modal-popup' ),
+                'default'     => __('Chọn một vai trò', 'ajax-login-and-registration-modal-popup' ),
                 'render'      => array( new LRM_Field_Text(), 'input' ),
                 'sanitize'    => array( new LRM_Field_Text(), 'sanitize' ),
             ) )
             ->add_field( array(
                 'slug'        => 'no_user_role',
                 'name'        => __('Form: User Role is missing', 'ajax-login-and-registration-modal-popup' ),
-                'default'     => __('Please select a Role', 'ajax-login-and-registration-modal-popup' ),
+                'default'     => __('Vui lòng chọn một Vai trò', 'ajax-login-and-registration-modal-popup' ),
                 'render'      => array( new LRM_Field_Text(), 'input' ),
                 'sanitize'    => array( new LRM_Field_Text(), 'sanitize' ),
             ) )
@@ -801,7 +801,7 @@ class LRM_Settings {
             ->add_field( array(
                 'slug'        => 'terms',
                 'name'        => __('Form: Terms', 'ajax-login-and-registration-modal-popup' ),
-                'default'     => 'I agree with the <a href=\'/terms\'>Terms</a>. <i>Edit this in Settings => Ajax Login Modal => Expressions tab => Registration section</i>',
+                'default'     => 'Đồng ý với <a href=\'/chinh-sach-bao-mat/\'>điều khoản</a> của chúng tôi .</i>',
                 'description' => 'sanitized by wp_kses_post',
                 'render'      => array( new LRM_Field_Textarea_With_Html(), 'input' ),
                 'sanitize'    => array( new LRM_Field_Textarea_With_Html(), 'sanitize' ),
@@ -809,14 +809,14 @@ class LRM_Settings {
 	        ->add_field( array(
 		        'slug'        => 'must_agree_with_terms',
 		        'name'        => __('Message: Must agree with the terms', 'ajax-login-and-registration-modal-popup' ),
-		        'default'     => __('Please agree with the terms to continue!', 'ajax-login-and-registration-modal-popup' ),
+		        'default'     => __('Vui lòng đồng ý với các điều khoản để tiếp tục!', 'ajax-login-and-registration-modal-popup' ),
 		        'render'      => array( new LRM_Field_Text(), 'input' ),
 		        'sanitize'    => array( new LRM_Field_Text(), 'sanitize' ),
 	        ) )
             ->add_field( array(
                 'slug'        => 'button',
                 'name'        => __('Form button: Create account', 'ajax-login-and-registration-modal-popup' ),
-                'default'     => __('Create account', 'ajax-login-and-registration-modal-popup' ),
+                'default'     => __('Tạo Tài Khoản', 'ajax-login-and-registration-modal-popup' ),
                 'render'      => array( new LRM_Field_Text(), 'input' ),
                 'sanitize'    => array( new LRM_Field_Text(), 'sanitize' ),
             ) )
@@ -824,42 +824,42 @@ class LRM_Settings {
             ->add_field( array(
                 'slug'        => 'disabled',
                 'name'        => __('Message: Registration is disabled', 'ajax-login-and-registration-modal-popup' ),
-                'default'     => __('Registration is disabled!', 'ajax-login-and-registration-modal-popup' ),
+                'default'     => __('Đăng ký bị vô hiệu hóa!', 'ajax-login-and-registration-modal-popup' ),
                 'render'      => array( new LRM_Field_Text(), 'input' ),
                 'sanitize'    => array( new LRM_Field_Text(), 'sanitize' ),
             ) )
             ->add_field( array(
                 'slug'        => 'no_username',
                 'name'        => __('Message: No UserName', 'ajax-login-and-registration-modal-popup' ),
-                'default'     => __('Please enter your UserName!', 'ajax-login-and-registration-modal-popup' ),
+                'default'     => __('Xin hãy điền tên đăng nhập!', 'ajax-login-and-registration-modal-popup' ),
                 'render'      => array( new LRM_Field_Text(), 'input' ),
                 'sanitize'    => array( new LRM_Field_Text(), 'sanitize' ),
             ) )
             ->add_field( array(
                 'slug'        => 'no_name',
                 'name'        => __('Message: No First Name', 'ajax-login-and-registration-modal-popup' ),
-                'default'     => __('Please enter your First Name!', 'ajax-login-and-registration-modal-popup' ),
+                'default'     => __('Vui lòng nhập tên của bạn!', 'ajax-login-and-registration-modal-popup' ),
                 'render'      => array( new LRM_Field_Text(), 'input' ),
                 'sanitize'    => array( new LRM_Field_Text(), 'sanitize' ),
             ) )
             ->add_field( array(
                 'slug'        => 'wrong_email',
                 'name'        => __('Message: Wrong email', 'ajax-login-and-registration-modal-popup' ),
-                'default'     => __('Please enter a correct email!', 'ajax-login-and-registration-modal-popup' ),
+                'default'     => __('Vui lòng nhập email chính xác!', 'ajax-login-and-registration-modal-popup' ),
                 'render'      => array( new LRM_Field_Text(), 'input' ),
                 'sanitize'    => array( new LRM_Field_Text(), 'sanitize' ),
             ) )
             ->add_field( array(
                 'slug'        => 'success',
                 'name'        => __('Message: Registration successful', 'ajax-login-and-registration-modal-popup' ),
-                'default'     => __('Registration was successful, reloading page.', 'ajax-login-and-registration-modal-popup' ),
+                'default'     => __('Đăng ký đã thành công.', 'ajax-login-and-registration-modal-popup' ),
                 'render'      => array( new LRM_Field_Text(), 'input' ),
                 'sanitize'    => array( new LRM_Field_Text(), 'sanitize' ),
             ) )
             ->add_field( array(
                 'slug'        => 'success_please_login',
                 'name'        => __('Message: Registration successful', 'ajax-login-and-registration-modal-popup' ),
-                'default'     => __('Registration was successful. We have sent you an email with your login information. Please use them to log into your account.', 'ajax-login-and-registration-modal-popup' ),
+                'default'     => __('Đăng ký đã thành công. Chúng tôi đã gửi cho bạn một email với thông tin đăng nhập của bạn. Vui lòng sử dụng chúng để đăng nhập vào tài khoản của bạn.', 'ajax-login-and-registration-modal-popup' ),
                 'render'      => array( new LRM_Field_Textarea_With_Html(), 'input' ),
                 'sanitize'    => array( new LRM_Field_Textarea_With_Html(), 'sanitize' ),
             ) );
@@ -873,7 +873,7 @@ class LRM_Settings {
             ->add_field( array(
                 'slug'        => 'message',
                 'name'        => __('Message', 'ajax-login-and-registration-modal-popup' ),
-                'default'     => __('Lost your password? Please enter your email address. You will receive mail with link to set new password.', 'ajax-login-and-registration-modal-popup' ),
+                'default'     => __('Quên mật khẩu? Hãy điền địa chỉ email của bạn. Bạn sẽ nhận được thư có link đặt mật khẩu mới.', 'ajax-login-and-registration-modal-popup' ),
                 'description' => 'Basic html supported',
                 'render'      => array( $html_field_class, 'input' ),
                 'sanitize'    => array( $html_field_class, 'sanitize' ),
@@ -882,21 +882,21 @@ class LRM_Settings {
             ->add_field( array(
                 'slug'        => 'email',
                 'name'        => __('Form: Email or Username', 'ajax-login-and-registration-modal-popup' ),
-                'default'     => __('Email or Username', 'ajax-login-and-registration-modal-popup' ),
+                'default'     => __('Email hoặc tên đăng nhập', 'ajax-login-and-registration-modal-popup' ),
                 'render'      => array( new LRM_Field_Text(), 'input' ),
                 'sanitize'    => array( new LRM_Field_Text(), 'sanitize' ),
             ) )
             ->add_field( array(
                 'slug'        => 'button',
                 'name'        => __('Form button: Reset password', 'ajax-login-and-registration-modal-popup' ),
-                'default'     => __('Reset password', 'ajax-login-and-registration-modal-popup' ),
+                'default'     => __('Lấy lại Mật khẩu', 'ajax-login-and-registration-modal-popup' ),
                 'render'      => array( new LRM_Field_Text(), 'input' ),
                 'sanitize'    => array( new LRM_Field_Text(), 'sanitize' ),
             ) )
             ->add_field( array(
                 'slug'        => 'to_login',
                 'name'        => __('Form button: Back to login', 'ajax-login-and-registration-modal-popup' ),
-                'default'     => __('Back to login', 'ajax-login-and-registration-modal-popup' ),
+                'default'     => __('Quay lại đăng nhập', 'ajax-login-and-registration-modal-popup' ),
                 'description' => 'Basic html supported',
                 'render'      => array( $html_field_class, 'input' ),
                 'sanitize'    => array( $html_field_class, 'sanitize' ),
@@ -906,49 +906,49 @@ class LRM_Settings {
             ->add_field( array(
                  'slug'        => 'invalid_email',
                 'name'        => __('Message: Missing login', 'ajax-login-and-registration-modal-popup' ),
-                'default'     => __('Enter an username or email address.', 'ajax-login-and-registration-modal-popup' ),
+                'default'     => __('Nhập tên người dùng hoặc địa chỉ email.', 'ajax-login-and-registration-modal-popup' ),
                 'render'      => array( new LRM_Field_Text(), 'input' ),
                 'sanitize'    => array( new LRM_Field_Text(), 'sanitize' ),
             ) )
             ->add_field( array(
                 'slug'        => 'email_not_exists',
                 'name'        => __('Message: No user registered with that email address', 'ajax-login-and-registration-modal-popup' ),
-                'default'     => __('There is no user registered with that email address.', 'ajax-login-and-registration-modal-popup' ),
+                'default'     => __('Không có người dùng nào đăng ký với địa chỉ email đó.', 'ajax-login-and-registration-modal-popup' ),
                 'render'      => array( new LRM_Field_Text(), 'input' ),
                 'sanitize'    => array( new LRM_Field_Text(), 'sanitize' ),
             ) )
             ->add_field( array(
                 'slug'        => 'user_not_exists',
                 'name'        => __('Message: No user registered with that username', 'ajax-login-and-registration-modal-popup' ),
-                'default'     => __('There is no user registered with that username.', 'ajax-login-and-registration-modal-popup' ),
+                'default'     => __('Không có người dùng nào đăng ký với tên người dùng đó.', 'ajax-login-and-registration-modal-popup' ),
                 'render'      => array( new LRM_Field_Text(), 'input' ),
                 'sanitize'    => array( new LRM_Field_Text(), 'sanitize' ),
             ) )
             ->add_field( array(
                 'slug'        => 'invalid_email_or_username',
                 'name'        => __('Message: Invalid username or e-mail address', 'ajax-login-and-registration-modal-popup' ),
-                'default'     => __('Invalid username or e-mail address.', 'ajax-login-and-registration-modal-popup' ),
+                'default'     => __('Tên người dùng hoặc địa chỉ email không hợp lệ.', 'ajax-login-and-registration-modal-popup' ),
                 'render'      => array( new LRM_Field_Text(), 'input' ),
                 'sanitize'    => array( new LRM_Field_Text(), 'sanitize' ),
             ) )
             ->add_field( array(
                 'slug'        => 'unable_send',
                 'name'        => __('Message: Unable to send email', 'ajax-login-and-registration-modal-popup' ),
-                'default'     => __('System is unable to send you the mail containing your new password.', 'ajax-login-and-registration-modal-popup' ),
+                'default'     => __('Hệ thống không thể gửi cho bạn thư chứa mật khẩu mới của bạn.', 'ajax-login-and-registration-modal-popup' ),
                 'render'      => array( new LRM_Field_Text(), 'input' ),
                 'sanitize'    => array( new LRM_Field_Text(), 'sanitize' ),
             ) )
             ->add_field( array(
                 'slug'        => 'something_wrong',
                 'name'        => __('Message: Something went wrong', 'ajax-login-and-registration-modal-popup' ),
-                'default'     => __('Oops! Something went wrong while updating your account.', 'ajax-login-and-registration-modal-popup' ),
+                'default'     => __('Ối! Đã xảy ra lỗi khi cập nhật tài khoản của bạn.', 'ajax-login-and-registration-modal-popup' ),
                 'render'      => array( new LRM_Field_Text(), 'input' ),
                 'sanitize'    => array( new LRM_Field_Text(), 'sanitize' ),
             ) )
             ->add_field( array(
                 'slug'        => 'success',
                 'name'        => __('Message: Reset successful', 'ajax-login-and-registration-modal-popup' ),
-                'default'     => __('Check your mailbox to access your new password.', 'ajax-login-and-registration-modal-popup' ),
+                'default'     => __('Kiểm tra hộp thư của bạn để truy cập mật khẩu mới của bạn.', 'ajax-login-and-registration-modal-popup' ),
                 'render'      => array( new LRM_Field_Text(), 'input' ),
                 'sanitize'    => array( new LRM_Field_Text(), 'sanitize' ),
             ) );
@@ -957,14 +957,14 @@ class LRM_Settings {
             ->add_field( array(
                 'slug'        => 'empty_key',
                 'name'        => __('Password reset link key is missing', 'ajax-login-and-registration-modal-popup' ),
-                'default'        => __('Your password reset link key is missing.', 'ajax-login-and-registration-modal-popup'),
+                'default'        => __('Khóa liên kết đặt lại mật khẩu của bạn bị thiếu.', 'ajax-login-and-registration-modal-popup'),
                 'render'      => array( new CoreFields\Text(), 'input' ),
                 'sanitize'    => array( new CoreFields\Text(), 'sanitize' ),
             ) )
             ->add_field( array(
                 'slug'        => 'empty_login',
                 'name'        => __('Password reset link login is missing', 'ajax-login-and-registration-modal-popup' ),
-                'default'        => __('Your password reset link login is missing.', 'ajax-login-and-registration-modal-popup'),
+                'default'        => __('Liên kết đăng nhập đặt lại mật khẩu của bạn bị thiếu.', 'ajax-login-and-registration-modal-popup'),
                 'render'      => array( new CoreFields\Text(), 'input' ),
                 'sanitize'    => array( new CoreFields\Text(), 'sanitize' ),
             ) );
@@ -973,70 +973,70 @@ class LRM_Settings {
             ->add_field( array(
                 'slug'        => 'password',
                 'name'        => __('Password', 'ajax-login-and-registration-modal-popup' ),
-                'default'        => __('Password', 'ajax-login-and-registration-modal-popup'),
+                'default'        => __('Mật khẩu', 'ajax-login-and-registration-modal-popup'),
                 'render'      => array( new CoreFields\Text(), 'input' ),
                 'sanitize'    => array( new CoreFields\Text(), 'sanitize' ),
             ) )
             ->add_field( array(
                 'slug'        => 'password_confirmation',
                 'name'        => __('Password confirmation', 'ajax-login-and-registration-modal-popup' ),
-                'default'        => __('Password confirmation', 'ajax-login-and-registration-modal-popup'),
+                'default'        => __('Xác nhận mật khẩu', 'ajax-login-and-registration-modal-popup'),
                 'render'      => array( new CoreFields\Text(), 'input' ),
                 'sanitize'    => array( new CoreFields\Text(), 'sanitize' ),
             ) )
             ->add_field( array(
                 'slug'        => 'use_weak_password',
                 'name'        => __('Confirm use of weak password (reset password page)', 'ajax-login-and-registration-modal-popup' ),
-                'default'        => __('Confirm use of weak password', 'ajax-login-and-registration-modal-popup'),
+                'default'        => __('Xác nhận sử dụng mật khẩu yếu', 'ajax-login-and-registration-modal-popup'),
                 'render'      => array( new CoreFields\Text(), 'input' ),
                 'sanitize'    => array( new CoreFields\Text(), 'sanitize' ),
             ) )
 	        ->add_field( array(
 		        'slug'        => 'password_is_weak',
 		        'name'        => __('Your password is very weak', 'ajax-login-and-registration-modal-popup' ),
-		        'default'        => __('Error: Your password is very weak!', 'ajax-login-and-registration-modal-popup'),
+		        'default'        => __('Lỗi: Mật khẩu của bạn rất yếu!', 'ajax-login-and-registration-modal-popup'),
 		        'render'      => array( new CoreFields\Text(), 'input' ),
 		        'sanitize'    => array( new CoreFields\Text(), 'sanitize' ),
 	        ) )
             ->add_field( array(
                 'slug'        => 'password_is_missing',
                 'name'        => __('Message: Password is missing', 'ajax-login-and-registration-modal-popup' ),
-                'default'        => __('Password is missing!', 'ajax-login-and-registration-modal-popup'),
+                'default'        => __('Mật khẩu bị thiếu!', 'ajax-login-and-registration-modal-popup'),
                 'render'      => array( new CoreFields\Text(), 'input' ),
                 'sanitize'    => array( new CoreFields\Text(), 'sanitize' ),
             ) )
             ->add_field( array(
                 'slug'        => 'password_is_good',
                 'name'        => __('Message: Good Password', 'ajax-login-and-registration-modal-popup' ),
-                'default'        => __('Good Password', 'ajax-login-and-registration-modal-popup'),
+                'default'        => __('Mật khẩu tốt', 'ajax-login-and-registration-modal-popup'),
                 'render'      => array( new CoreFields\Text(), 'input' ),
                 'sanitize'    => array( new CoreFields\Text(), 'sanitize' ),
             ) )
             ->add_field( array(
                 'slug'        => 'password_is_bad',
                 'name'        => __('Message: Bad Password', 'ajax-login-and-registration-modal-popup' ),
-                'default'        => __('Bad Password', 'ajax-login-and-registration-modal-popup'),
+                'default'        => __('Mật khẩu sai', 'ajax-login-and-registration-modal-popup'),
                 'render'      => array( new CoreFields\Text(), 'input' ),
                 'sanitize'    => array( new CoreFields\Text(), 'sanitize' ),
             ) )
             ->add_field( array(
                 'slug'        => 'passwords_is_mismatch',
                 'name'        => __('Message: Mismatch', 'ajax-login-and-registration-modal-popup' ),
-                'default'        => __('Passwords is mismatch!', 'ajax-login-and-registration-modal-popup'),
+                'default'        => __('Mật khẩu không khớp!', 'ajax-login-and-registration-modal-popup'),
                 'render'      => array( new CoreFields\Text(), 'input' ),
                 'sanitize'    => array( new CoreFields\Text(), 'sanitize' ),
             ) )
             ->add_field( array(
                 'slug'        => 'password_is_strong',
                 'name'        => __('Message: Strong Password', 'ajax-login-and-registration-modal-popup' ),
-                'default'        => __('Strong Password', 'ajax-login-and-registration-modal-popup'),
+                'default'        => __('Mật khẩu mạnh', 'ajax-login-and-registration-modal-popup'),
                 'render'      => array( new CoreFields\Text(), 'input' ),
                 'sanitize'    => array( new CoreFields\Text(), 'sanitize' ),
             ) )
             ->add_field( array(
                 'slug'        => 'password_is_short',
                 'name'        => __('Message: Too Short Password', 'ajax-login-and-registration-modal-popup' ),
-                'default'        => __('Too Short Password', 'ajax-login-and-registration-modal-popup'),
+                'default'        => __('Mật khẩu quá ngắn', 'ajax-login-and-registration-modal-popup'),
                 'render'      => array( new CoreFields\Text(), 'input' ),
                 'sanitize'    => array( new CoreFields\Text(), 'sanitize' ),
             ) );
@@ -1045,7 +1045,7 @@ class LRM_Settings {
             ->add_field( array(
                 'slug'        => 'close_modal',
                 'name'        => __('Close modal text', 'ajax-login-and-registration-modal-popup' ),
-                'default'     => __('close', 'ajax-login-and-registration-modal-popup' ),
+                'default'     => __('đóng', 'ajax-login-and-registration-modal-popup' ),
                 'render'      => array( new LRM_Field_Text(), 'input' ),
                 'sanitize'    => array( new LRM_Field_Text(), 'sanitize' ),
             ) )
@@ -1053,7 +1053,7 @@ class LRM_Settings {
             ->add_field( array(
                 'slug'        => 'show_pass',
                 'name'        => __('Show password', 'ajax-login-and-registration-modal-popup' ),
-                'default'     => __('Show', 'ajax-login-and-registration-modal-popup' ),
+                'default'     => __('Hiển Thị', 'ajax-login-and-registration-modal-popup' ),
                 'render'      => array( new LRM_Field_Text(), 'input' ),
                 'sanitize'    => array( new LRM_Field_Text(), 'sanitize' ),
             ) )
@@ -1061,7 +1061,7 @@ class LRM_Settings {
             ->add_field( array(
                 'slug'        => 'hide_pass',
                 'name'        => __('Hide password', 'ajax-login-and-registration-modal-popup' ),
-                'default'     => __('Hide', 'ajax-login-and-registration-modal-popup' ),
+                'default'     => __('Ẩn', 'ajax-login-and-registration-modal-popup' ),
                 'render'      => array( new LRM_Field_Text(), 'input' ),
                 'sanitize'    => array( new LRM_Field_Text(), 'sanitize' ),
             ) )
@@ -1069,7 +1069,7 @@ class LRM_Settings {
             ->add_field( array(
                 'slug'        => 'invalid_nonce',
                 'name'        => __('Message: Security token is expired', 'ajax-login-and-registration-modal-popup' ),
-                'default'     => __('Security token is expired! Please refresh the page!', 'ajax-login-and-registration-modal-popup' ),
+                'default'     => __('Mã thông báo bảo mật đã hết hạn! Vui lòng làm mới trang!', 'ajax-login-and-registration-modal-popup' ),
                 'render'      => array( new LRM_Field_Text(), 'input' ),
                 'sanitize'    => array( new LRM_Field_Text(), 'sanitize' ),
             ) );

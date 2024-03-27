@@ -16379,7 +16379,7 @@ msgstr ""
 #: includes/customizer/class-wc-shop-customizer.php:746
 #: includes/wc-template-functions.php:861
 msgid "Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our %s."
-msgstr ""
+msgstr "Thông tin cá nhân của bạn sẽ được sử dụng để xử lý đơn hàng, tăng trải nghiệm sử dụng website, và cho các mục đích cụ thể khác đã được mô tả trong %s của chúng tôi."
 
 #: includes/admin/settings/class-wc-settings-accounts.php:170
 msgid "Personal data retention"

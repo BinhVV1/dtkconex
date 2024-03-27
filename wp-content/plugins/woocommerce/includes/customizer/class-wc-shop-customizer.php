@@ -731,7 +731,7 @@ class WC_Shop_Customizer {
 			'woocommerce_checkout_terms_and_conditions_checkbox_text',
 			array(
 				/* translators: %s terms and conditions page name and link */
-				'default'           => sprintf( __( 'I have read and agree to the website %s', 'woocommerce' ), '[terms]' ),
+				'default'           => sprintf( __( 'Tôi đã đọc và đồng ý với trang web %s', 'woocommerce' ), '[chinh-sach-bao-mat]' ),
 				'type'              => 'option',
 				'capability'        => 'manage_woocommerce',
 				'sanitize_callback' => 'wp_kses_post',
@@ -743,7 +743,7 @@ class WC_Shop_Customizer {
 			'woocommerce_checkout_privacy_policy_text',
 			array(
 				/* translators: %s privacy policy page name and link */
-				'default'           => sprintf( __( 'Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our %s.', 'woocommerce' ), '[privacy_policy]' ),
+				'default'           => sprintf( __( 'Dữ liệu cá nhân của bạn sẽ được sử dụng để xử lý đơn đặt hàng, hỗ trợ trải nghiệm của bạn trên trang web này và cho các mục đích khác được mô tả trong phần của chúng tôi. %s.', 'woocommerce' ), '[privacy_policy]' ),
 				'type'              => 'option',
 				'capability'        => 'manage_woocommerce',
 				'sanitize_callback' => 'wp_kses_post',

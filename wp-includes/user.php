@@ -145,11 +145,11 @@ function wp_authenticate_username_password( $user, $username, $password ) {
 		$error = new WP_Error();
 
 		if ( empty( $username ) ) {
-			$error->add( 'empty_username', __( '<strong>Error:</strong> The username field is empty.' ) );
+			$error->add( 'empty_username', __( '<strong>Lỗi:</strong> Trường tên người dùng trống.' ) );
 		}
 
 		if ( empty( $password ) ) {
-			$error->add( 'empty_password', __( '<strong>Error:</strong> The password field is empty.' ) );
+			$error->add( 'empty_password', __( '<strong>Lỗi:</strong> Trường mật khẩu trống.' ) );
 		}
 
 		return $error;
@@ -162,7 +162,7 @@ function wp_authenticate_username_password( $user, $username, $password ) {
 			'invalid_username',
 			sprintf(
 				/* translators: %s: User name. */
-				__( '<strong>Error:</strong> The username <strong>%s</strong> is not registered on this site. If you are unsure of your username, try your email address instead.' ),
+				__( '<strong>Lỗi:</strong> Tên người dùng <strong>%s</strong> chưa được đăng ký trên trang này. Nếu bạn không chắc chắn về tên người dùng của mình, hãy thử địa chỉ email của bạn.' ),
 				$username
 			)
 		);
@@ -187,11 +187,11 @@ function wp_authenticate_username_password( $user, $username, $password ) {
 			'incorrect_password',
 			sprintf(
 				/* translators: %s: User name. */
-				__( '<strong>Error:</strong> The password you entered for the username %s is incorrect.' ),
+				__( '<strong>Lỗi:</strong> Mật khẩu bạn đã nhập cho tên người dùng %s không đúng.' ),
 				'<strong>' . $username . '</strong>'
 			) .
 			' <a href="' . wp_lostpassword_url() . '">' .
-			__( 'Lost your password?' ) .
+			__( 'Quên mật khẩu?' ) .
 			'</a>'
 		);
 	}
@@ -224,11 +224,11 @@ function wp_authenticate_email_password( $user, $email, $password ) {
 
 		if ( empty( $email ) ) {
 			// Uses 'empty_username' for back-compat with wp_signon().
-			$error->add( 'empty_username', __( '<strong>Error:</strong> The email field is empty.' ) );
+			$error->add( 'empty_username', __( '<strong>Lỗi:</strong> Trường email trống.' ) );
 		}
 
 		if ( empty( $password ) ) {
-			$error->add( 'empty_password', __( '<strong>Error:</strong> The password field is empty.' ) );
+			$error->add( 'empty_password', __( '<strong>Lỗi:</strong> Trường mật khẩu trống.' ) );
 		}
 
 		return $error;
@@ -243,7 +243,7 @@ function wp_authenticate_email_password( $user, $email, $password ) {
 	if ( ! $user ) {
 		return new WP_Error(
 			'invalid_email',
-			__( 'Unknown email address. Check again or try your username.' )
+			__( 'Địa chỉ email không xác định. Hãy kiểm tra lại hoặc thử tên người dùng của bạn.' )
 		);
 	}
 
@@ -259,11 +259,11 @@ function wp_authenticate_email_password( $user, $email, $password ) {
 			'incorrect_password',
 			sprintf(
 				/* translators: %s: Email address. */
-				__( '<strong>Error:</strong> The password you entered for the email address %s is incorrect.' ),
+				__( '<strong>Lỗi:</strong> Mật khẩu bạn nhập cho địa chỉ email %s không chính xác.' ),
 				'<strong>' . $email . '</strong>'
 			) .
 			' <a href="' . wp_lostpassword_url() . '">' .
-			__( 'Lost your password?' ) .
+			__( 'Quên mật khẩu?' ) .
 			'</a>'
 		);
 	}
@@ -852,7 +852,7 @@ function wp_list_users( $args = array() ) {
 		if ( $parsed_args['show_fullname'] && '' !== $user->first_name && '' !== $user->last_name ) {
 			$name = sprintf(
 				/* translators: 1: User's first name, 2: Last name. */
-				_x( '%1$s %2$s', 'Display name based on first name and last name' ),
+				_x( '%1$s %2$s', 'Tên hiển thị dựa trên họ và tên' ),
 				$user->first_name,
 				$user->last_name
 			);
@@ -1352,7 +1352,7 @@ function get_user_count( $network_id = null ) {
 			__FUNCTION__,
 			sprintf(
 				/* translators: %s: $network_id */
-				__( 'Unable to pass %s if not using multisite.' ),
+				__( 'Không thể vượt qua %s nếu không sử dụng nhiều trang.' ),
 				'<code>$network_id</code>'
 			),
 			'6.0.0'

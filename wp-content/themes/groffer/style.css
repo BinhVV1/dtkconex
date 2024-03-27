@@ -30,7 +30,6 @@ Release Date: 13-FEB-2023;
 
 */
 
-
 /* 1. Reset CSS */
 html {
     font-family: sans-serif;
@@ -2900,13 +2899,13 @@ span.amount {
     color: #242424;
 }
 .product-price span.woocommerce-Price-amount.amount:after {
-    content: "/ piece";
+    content: "";
     color: #606060;
     font-weight: 400;
     margin-left: 5px;
 }
 .product-subtotal span.woocommerce-Price-amount.amount:after {
-    content: "in total";
+    content: "";
     color: #606060;
     font-weight: 400;
     margin-left: 5px;

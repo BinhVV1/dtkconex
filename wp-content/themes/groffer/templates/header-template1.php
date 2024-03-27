@@ -55,7 +55,7 @@ if ( class_exists( 'ReduxFrameworkPlugin' ) ) {
                       $optsetlect=0;  
                     }
                     $args = array(
-                      'show_option_none' => esc_html__( 'Category', 'groffer' ),
+                      'show_option_none' => esc_html__( 'Danh Mục', 'groffer' ),
                       'option_none_value'  => '',
                       'hierarchical' => 0,
                       'class' => 'cat',
@@ -70,7 +70,7 @@ if ( class_exists( 'ReduxFrameworkPlugin' ) ) {
                     wp_dropdown_categories($args);
                   ?>
                   <input type="hidden" value="product" name="post_type">
-                  <input type="text"  name="s" class="search-field" id="keyword" onkeyup="ibid_fetch_products()" maxlength="128" value="<?php echo esc_attr(get_search_query()); ?>" placeholder="<?php esc_attr_e('Search products...', 'groffer'); ?>">
+                  <input type="text"  name="s" class="search-field" id="keyword" onkeyup="ibid_fetch_products()" maxlength="128" value="<?php echo esc_attr(get_search_query()); ?>" placeholder="<?php esc_attr_e('Tìm Kiếm...', 'groffer'); ?>">
                   <button type="submit" class="btn btn-primary"><i class="fa fa-search" aria-hidden="true"></i></button>
                   <input type="hidden" name="post_type" value="product" />
                 </form>
@@ -214,7 +214,7 @@ if ( class_exists( 'ReduxFrameworkPlugin' ) ) {
                       }
                     ?>
                   
-                     <a class="inquiry btn" href ="<?php echo esc_html($groffer_redux['groffer_first_header_button']); ?>"><?php esc_html_e('Get a Quote','groffer') ?></a>
+                     <a class="inquiry btn" href ="<?php echo esc_html($groffer_redux['groffer_first_header_button']); ?>"><?php esc_html_e('Liên Hệ Đặt Hàng','groffer') ?></a>
                     <?php if(groffer_redux('groffer_header_language_switcher') != '' && groffer_redux('groffer_header_language_switcher') == '1'){ ?>
 
                       <li class="language-wrap">
