@@ -325,9 +325,7 @@
         font-weight: 600;
         line-height: 47px !important;
     }
-    .navbar-header .logo img {
-        max-width: 150px !important;
-    }
+    
     span.menu-pin,
     #groffer-main-head .first-part {
         display: none;

@@ -76,7 +76,7 @@ abstract class MC4WP_Integration {
 			'double_optin'      => 1,
 			'enabled'           => 0,
 			'implicit'          => 0,
-			'label'             => __( 'Sign me up for the newsletter!', 'mailchimp-for-wp' ),
+			'label'             => __( 'Đăng ký nhận bản tin cho tôi!', 'mailchimp-for-wp' ),
 			'lists'             => array(),
 			'precheck'          => 0,
 			'replace_interests' => 0,

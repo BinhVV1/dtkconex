@@ -15995,3 +15995,113 @@ a.member02_name {
     left: inherit;
     right: -60px;
 }
+
+/*---*/
+.header-v1 {
+    top:0;
+    position: fixed !important;
+    width: 100%;
+    z-index: 999;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+body {
+    padding-top: 165px;
+}
+
+#modeltheme-main-head {
+    padding-bottom: 20px;
+}
+
+.mc4wp-checkbox-woocommerce {
+    display: none;
+}
+
+@media(max-width: 600px) {
+    #ship-to-different-address .woocommerce-form__label-for-checkbox {
+        padding: 10px;
+        border: 1px black solid;
+        display: flex;
+        align-items: center;
+    }
+    .woocommerce-account-fields .create-account {
+        margin-left: 20px !important;
+    }
+
+    #ship-to-different-address #ship-to-different-address-checkbox {
+        opacity: 0!important;
+        width: 0!important;
+    }
+    .navbar-header {
+        display: flex;
+        justify-content: space-between; /* Canh giữa các phần tử và giữa hai đầu của thanh ngang */
+        align-items: center; /* Canh giữa các phần tử theo chiều dọc */
+        height: 100%; /* Đảm bảo chiều cao của phần tử bằng chiều cao của thanh điều hướng */
+    }
+
+    .woocommerce-message .wc-forward {
+        width: 100%;
+    }
+    
+    .logo,.logo a {
+        width: 100% !important;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .logo img {
+       max-width: 70% !important;
+    }
+
+    .navbar-toggle {
+        order: 01;
+    }
+
+    .high-padding .sidebar-content {
+        margin-top: 0 !important;
+    }
+    #woocommerce_product_search-1 {
+        display: none;
+    }
+    .sidebar-content {
+        order: -1 !important; 
+    }
+    body {
+        padding-top: 75px;
+    }
+
+    #modeltheme-main-head {
+        padding-bottom: 0px;
+    }
+
+    .first-part {
+        padding-bottom: 20px !important;
+    }
+
+    .my-account-navbar {
+        width: 100% !important;
+        margin: 0!important;
+        display: block !important;
+    }
+
+    .menu-product-cart {
+        width: 100% !important;
+        margin: 0!important;
+        display: block !important;
+        margin-left: 10px !important;
+    }
+
+    .cart-number {
+        right: 125px !important;
+    }
+
+    #dropdown-user-profile ul {
+        display: none !important;
+    }
+ 
+    li#nav-menu-register span:last-child:after {
+        content:''!important;
+    }
+}

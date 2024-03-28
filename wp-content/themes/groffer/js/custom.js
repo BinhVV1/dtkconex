@@ -9,7 +9,24 @@
     'use strict';
     
     $(document).ready(function() {
+        // var check = false;
+        // function checkClassChange() {
+        //     var displayValue = $('.lrm-form-message').css('display');
+        //     if (displayValue !== 'none' && check == false) {
+        //         check = true;
+        //         location.reload();
+        //     }
+        // }
+        
+        // setInterval(checkClassChange, 2000);
 
+        if (window.matchMedia('(max-width: 767px)').matches) {
+            var newLi = $('<li>');
+            var firstPartDiv = $('.first-part');
+            newLi.append(firstPartDiv);
+            $('.nav-menu').append(newLi);
+            firstPartDiv.css('display', 'block');
+        }
         //Instant search in header
         jQuery('.groffer-header-searchform input#keyword').on('blur', function(){
             jQuery('#datafetch').removeClass('focus');

@@ -528,7 +528,7 @@ function wpmu_validate_user_signup( $user_name, $user_email ) {
 			'user_email',
 			sprintf(
 				/* translators: %s: Link to the login page. */
-				__( '<strong>Error:</strong> This email address is already registered. <a href="%s">Log in</a> with this address or choose another one.' ),
+				__( '<strong>Error:</strong>Email này đã được đăng kí trước đây. <a href="%s">Đăng nhập</a> bằng địa chỉ này hoặc chọn địa chỉ khác.' ),
 				wp_login_url()
 			)
 		);
